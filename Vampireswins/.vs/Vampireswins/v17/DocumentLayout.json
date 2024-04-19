@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\zalek\\source\\repos\\Grinding\\Vampireswins\\",
+  "WorkspaceRootPath": "C:\\Users\\zalek\\source\\repos\\codeacademy\\Grinding\\Vampireswins\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DB34C58A-8098-4581-BE99-F3297077BC9F}|Vampireswins\\Vampireswins.csproj|c:\\users\\zalek\\source\\repos\\grinding\\vampireswins\\vampireswins\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DB34C58A-8098-4581-BE99-F3297077BC9F}|Vampireswins\\Vampireswins.csproj|c:\\users\\zalek\\source\\repos\\codeacademy\\grinding\\vampireswins\\vampireswins\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DB34C58A-8098-4581-BE99-F3297077BC9F}|Vampireswins\\Vampireswins.csproj|solutionrelative:vampireswins\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,9 +20,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\zalek\\source\\repos\\Grinding\\Vampireswins\\Vampireswins\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\zalek\\source\\repos\\codeacademy\\Grinding\\Vampireswins\\Vampireswins\\Program.cs",
               "RelativeDocumentMoniker": "Vampireswins\\Program.cs",
-              "ToolTip": "C:\\Users\\zalek\\source\\repos\\Grinding\\Vampireswins\\Vampireswins\\Program.cs",
+              "ToolTip": "C:\\Users\\zalek\\source\\repos\\codeacademy\\Grinding\\Vampireswins\\Vampireswins\\Program.cs",
               "RelativeToolTip": "Vampireswins\\Program.cs",
               "ViewState": "AQIAADcAAAAAAAAAAAAIwFMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
