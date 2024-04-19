@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArchitectArithmetic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+365762e5359ab40db3f16a2f88258a0932f451b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArchitectArithmetic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArchitectArithmetic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
