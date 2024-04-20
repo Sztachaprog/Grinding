@@ -95,5 +95,5 @@ public class Program
 
         // Zakończenie programu ze statusem 0 - czyli pomyślnie się zakończył program
         Environment.Exit(0);
-    }
+    }///gggg
 }

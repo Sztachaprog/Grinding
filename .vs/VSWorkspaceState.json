@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ArchitectArithmetic",
+    "\\PasswordCheckerv1",
+    "\\PasswordCheckerv2",
+    "\\PasswordCheckerv2\\PasswordCheckerv2"
   ],
-  "SelectedNode": "\\ArchitectArithmetic.sln",
+  "SelectedNode": "\\PasswordCheckerv1\\PasswordCheckerv1.sln",
   "PreviewInSolutionExplorer": false
 }
