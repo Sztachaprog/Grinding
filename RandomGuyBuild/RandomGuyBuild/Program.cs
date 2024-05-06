@@ -6,47 +6,18 @@ namespace ExquisiteCorpse
     {
         static void Main(string[] args)
         {
-            RandomMode();
+            int[] plantHeights = { 3, 6, 4, 1, 6, 8 };
+
+            // Find the first occurence of a plant height that is greater than 5 inches
+            int firstHeight = Array.Find(plantHeights, height => height > 5);
+            Console.WriteLine(firstHeight);
         }
         static void BuildACreature(string head, string body, string feet)
         {
-            switch (head) 
-            {
-                case "Ghost":
-                    GhostHead();
-                    break;
-                case "Monster":
-                    MonsterHead();
-                    break;
-                case "Bug":
-                    BugHead();
-                    break;
-            }
-            switch (body)
-            {
-                case "Ghost":
-                    GhostBody();
-                    break;
-                case "Monster":
-                    MonsterBody();
-                    break;
-                case "Bug":
-                    BugBody();
-                    break;
-            }
-            switch (feet)
-            {
-                case "Ghost":
-                    GhostFeet();
-                    break;
-                case "Monster":
-                    MonsterFeet();
-                    break;
-                case "Bug":
-                    BugFeet();
-                    break;
-            }
-
+            int headNum = TranslateToNumber(head);
+            int bodyNum = TranslateToNumber(body);
+            int feetNum = TranslateToNumber(feet);
+            SwitchCase(headNum, bodyNum, feetNum);
         }
         static void RandomMode()
         {
@@ -94,6 +65,24 @@ namespace ExquisiteCorpse
                 case 3:
                     BugFeet();
                     break;
+            }
+        }
+        static int TranslateToNumber(string creature)
+        {
+            switch(creature) 
+            {
+                case "ghost":
+                    return 1;
+                    
+                case "Monster":
+                    return 2;
+                    
+                case "Bug": 
+                    return 3;
+                    
+                default:
+                    return 1;
+                     
             }
         }
 
