@@ -22,6 +22,29 @@ namespace CaesarCipher
 
             char[] encryptedMessage =  new char[secretMessage.Length];
 
+            // Creating loop For that loops through each character of "secretMessage"
+
+            for(int i = 0; i < secretMessage.Length; i++)
+            {
+                // Creating char that store position of char 'i' from "secretMessage"
+                // for example in "Hello world" secretMessage[0] is H
+                char letter = secretMessage[i];
+
+                // Searching for the index position of "letter" within the "alphabet" array
+                int charPosition = Array.IndexOf(alphabet, letter);
+
+                // Adding 3 positions to a letter
+                int cryptedLetter = charPosition + 3;
+
+                // Creating new encrypted letter
+                char newEncryptedMessage = alphabet[cryptedLetter];
+
+                // Assigning the new encrypted letter to the message:
+                encryptedMessage[i] = newEncryptedMessage;
+                
+            }
+            
+
 
         }
     }
