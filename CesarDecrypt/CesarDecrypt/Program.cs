@@ -1,19 +1,43 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace CaesarCipher
 {
     class Program
     {
+        public static bool IsAllLetters(string s)
+        {
+            foreach (char c in s)
+            {
+                if (!Char.IsLetter(c))
+                    return false;
+            }
+            return true;
+        }
+
         static void Main(string[] args)
         {
+
             char[] alphabet = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
+
 
             // Asking user to type a secret message to convert into crypted message
             // Asking the user to input a secret message to convert it into an encrypted one
-
             Console.WriteLine("Type a secret message and we will convert it for you into an encrypted message: ");
-            string userMessage = Console.ReadLine();
+            string userMessage = Console.ReadLine().ToLower();
 
+            while (true) 
+            {
+                if (IsAllLetters(userMessage))
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Try letters");
+                    userMessage = Console.ReadLine().ToLower();
+                }
+            } 
             // Converting captured string from user to array of chaaracters
 
             char[] secretMessage = userMessage.ToCharArray();
@@ -34,7 +58,7 @@ namespace CaesarCipher
                 int charPosition = Array.IndexOf(alphabet, letter);
 
                 // Adding 3 positions to a letter
-                int cryptedLetter = charPosition + 3;
+                int cryptedLetter = (charPosition + 3) % 26;
 
                 // Creating new encrypted letter
                 char newEncryptedMessage = alphabet[cryptedLetter];
@@ -43,7 +67,10 @@ namespace CaesarCipher
                 encryptedMessage[i] = newEncryptedMessage;
                 
             }
-            
+
+            string newwEncryptedMessage = String.Join("", encryptedMessage);
+            Console.WriteLine(newwEncryptedMessage);
+
 
 
         }
