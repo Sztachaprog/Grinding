@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Text.RegularExpressions;
+<<<<<<< HEAD
 using System.Linq;
+=======
+>>>>>>> 362d4ef47d1a29c271c017b80dafc18d961936bd
 
 namespace CaesarCipher
 {
     class Program
     {
+<<<<<<< HEAD
 
         public static bool IsAllLetters(string s)
         {
@@ -32,6 +36,30 @@ namespace CaesarCipher
             Console.Write("What message you want to encrypt?: ");
             string userMessage = Console.ReadLine().ToLower();
             while (true)
+=======
+        public static bool IsAllLetters(string s)
+        {
+            foreach (char c in s)
+            {
+                if (!Char.IsLetter(c))
+                    return false;
+            }
+            return true;
+        }
+
+        static void Main(string[] args)
+        {
+
+            char[] alphabet = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
+
+
+            // Asking user to type a secret message to convert into crypted message
+            // Asking the user to input a secret message to convert it into an encrypted one
+            Console.WriteLine("Type a secret message and we will convert it for you into an encrypted message: ");
+            string userMessage = Console.ReadLine().ToLower();
+
+            while (true) 
+>>>>>>> 362d4ef47d1a29c271c017b80dafc18d961936bd
             {
                 if (IsAllLetters(userMessage))
                 {
@@ -42,7 +70,11 @@ namespace CaesarCipher
                     Console.WriteLine("Try letters");
                     userMessage = Console.ReadLine().ToLower();
                 }
+<<<<<<< HEAD
             }
+=======
+            } 
+>>>>>>> 362d4ef47d1a29c271c017b80dafc18d961936bd
             // Converting captured string from user to array of chaaracters
 
             char[] secretMessage = userMessage.ToCharArray();
@@ -74,6 +106,7 @@ namespace CaesarCipher
             string newwEncryptedMessage = String.Join("", encryptedMessage);
             Console.WriteLine(newwEncryptedMessage);
 
+<<<<<<< HEAD
         }
         public static void Decrypt()
         {
@@ -142,6 +175,8 @@ namespace CaesarCipher
             }
 
             //Console.WriteLine("Your encrypted message is: "); Encrypt();
+=======
+>>>>>>> 362d4ef47d1a29c271c017b80dafc18d961936bd
 
 
         }
