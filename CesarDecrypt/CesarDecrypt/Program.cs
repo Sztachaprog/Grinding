@@ -14,6 +14,35 @@ namespace CaesarCipher
             }
             return true;
         }
+        public static void Encrypt(string userMessage)
+        {
+            char[] alphabet = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
+            char[] secretMessage = userMessage.ToCharArray();
+            char[] encryptedMessage = new char[secretMessage.Length];
+
+            for (int i = 0; i < userMessage.Length; i++)
+            {
+                // Creating char that store position of char 'i' from "secretMessage"
+                // for example in "Hello world" secretMessage[0] is H
+                char letter = userMessage[i];
+
+                // Searching for the index position of "letter" within the "alphabet" array
+                int charPosition = Array.IndexOf(alphabet, letter);
+
+                // Adding 3 positions to a letter
+                int cryptedLetter = (charPosition + 3) % 26;
+
+                // Creating new encrypted letter
+                char newEncryptedMessage = userMessage[cryptedLetter];
+
+                // Assigning the new encrypted letter to the message:
+                encryptedMessage[i] = newEncryptedMessage;
+
+            }
+
+            string newwEncryptedMessage = String.Join("", userMessage);
+            Console.WriteLine(newwEncryptedMessage);
+        }
 
         static void Main(string[] args)
         {
@@ -37,39 +66,40 @@ namespace CaesarCipher
                     Console.WriteLine("Try letters");
                     userMessage = Console.ReadLine().ToLower();
                 }
-            } 
+            }
             // Converting captured string from user to array of chaaracters
 
-            char[] secretMessage = userMessage.ToCharArray();
+            //char[] secretMessage = userMessage.ToCharArray();
 
             // New empty array of characters with length of "secretMessage"
 
-            char[] encryptedMessage =  new char[secretMessage.Length];
+            //char[] encryptedMessage =  new char[secretMessage.Length];
 
             // Creating loop For that loops through each character of "secretMessage"
 
-            for(int i = 0; i < secretMessage.Length; i++)
-            {
-                // Creating char that store position of char 'i' from "secretMessage"
-                // for example in "Hello world" secretMessage[0] is H
-                char letter = secretMessage[i];
+            /* for(int i = 0; i < secretMessage.Length; i++)
+             {
+                 // Creating char that store position of char 'i' from "secretMessage"
+                 // for example in "Hello world" secretMessage[0] is H
+                 char letter = secretMessage[i];
 
-                // Searching for the index position of "letter" within the "alphabet" array
-                int charPosition = Array.IndexOf(alphabet, letter);
+                 // Searching for the index position of "letter" within the "alphabet" array
+                 int charPosition = Array.IndexOf(alphabet, letter);
 
-                // Adding 3 positions to a letter
-                int cryptedLetter = (charPosition + 3) % 26;
+                 // Adding 3 positions to a letter
+                 int cryptedLetter = (charPosition + 3) % 26;
 
-                // Creating new encrypted letter
-                char newEncryptedMessage = alphabet[cryptedLetter];
+                 // Creating new encrypted letter
+                 char newEncryptedMessage = alphabet[cryptedLetter];
 
-                // Assigning the new encrypted letter to the message:
-                encryptedMessage[i] = newEncryptedMessage;
-                
-            }
+                 // Assigning the new encrypted letter to the message:
+                 encryptedMessage[i] = newEncryptedMessage;
 
-            string newwEncryptedMessage = String.Join("", encryptedMessage);
-            Console.WriteLine(newwEncryptedMessage);
+             }
+
+             string newwEncryptedMessage = String.Join("", encryptedMessage);
+             Console.WriteLine(newwEncryptedMessage);*/
+            Encrypt(userMessage);
 
 
 
