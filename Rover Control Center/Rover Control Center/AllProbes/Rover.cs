@@ -2,31 +2,29 @@
 
 namespace Rover_Control_Center.Rovers
 {
-    class Rover : IDirectable
+    class Rover : Probe
     {
-        public string Alias
-        { get; private set; }
 
         public int YearLanded
         { get; private set; }
 
-        public Rover(string alias, int yearLanded)
+        public Rover(string alias, int yearLanded) : base(alias)
         {
-            Alias = alias;
             YearLanded = yearLanded;
         }
 
-        public string GetInfo()
+
+        public override string GetInfo()
         {
             return $"Alias: {Alias}, YearLanded: {YearLanded}";
         }
 
-        public virtual string Explore()
+        public override string Explore()
         {
             return "Rover is exploring the surface!";
         }
 
-        public virtual string Collect()
+        public override string Collect()
         {
             return "Rover is collecting rocks!";
         }

@@ -9,7 +9,7 @@ namespace RoverControlCenter
     {
 
         // 2. static method that prints all informations of variables in array 
-        static void DirectAll( IDirectable[] directables)
+        static void DirectAll( Probe[] directables)
         {
             foreach (var rover in directables)
             {
@@ -36,7 +36,7 @@ namespace RoverControlCenter
             }
             Console.WriteLine(" ");
             // 8.
-            IDirectable[] dt = new IDirectable[] { lunokhod, apollo, sojourner, sputnik };
+            Probe[] dt = new Probe[] { lunokhod, apollo, sojourner, sputnik };
             DirectAll(dt);
 
 
