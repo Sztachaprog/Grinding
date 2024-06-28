@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supernatural Inheritance with MAGES PUPILS", "Supernatural Inheritance with MAGES PUPILS\Supernatural Inheritance with MAGES PUPILS.csproj", "{A50494C3-144A-4D95-9A13-32EE3DCA2E66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A50494C3-144A-4D95-9A13-32EE3DCA2E66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A50494C3-144A-4D95-9A13-32EE3DCA2E66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A50494C3-144A-4D95-9A13-32EE3DCA2E66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A50494C3-144A-4D95-9A13-32EE3DCA2E66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF5AB8DF-0BB7-45B6-BDE2-84AB985981DA}
+	EndGlobalSection
+EndGlobal
